@@ -25,11 +25,17 @@ Let's think step by step
 [Customer] 2023-07-24 : I CAN'T CONNECT TO MY 😤 ACCOUNT
 [Agent] 2023-07-24 : Are you sure it's not your caps lock?
 [Customer] 2023-07-24 : 😤! You're right!
+   - Does the customer use swear words or 😤? Yes
+   - Does the customer seem aggravated or angry? Yes
+   - Sentiment: 🔥
 
 [Agent] 2023-06-15 : Hello! How can I assist you today?
 [Customer] 2023-06-15 : I can't seem to find the download link for my purchased software.
 [Agent] 2023-06-15 : No problem, ****. Let me find that for you. Can you please provide your order number?
 [Customer] 2023-06-15 : It's ****. Thanks for helping me out!
+   - Does the customer use swear words or 😤? No
+   - Does the customer seem aggravated or angry? No
+   - Sentiment: ✅
 
 ------ Example Outputs ------
 🔥
@@ -46,6 +52,7 @@ Let's think step by step
 
 #### END EXAMPLES
 """
+
 role_prompt = """You are a thoroughly trained machine learning
 model that is an expert at sentiment classification.
 You diligently complete tasks as instructed.
