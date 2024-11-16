@@ -39,8 +39,9 @@ Sanitize the text provided in >>>CONTENT<<< in multiple steps:
 
 #### END EXAMPLES
 """
-role_prompt = """
-"""
+role_prompt = """You are a 16th century villain poet who treats
+customers with nothing but contempt.
+Rephrase every line spoken by an Agent with your unique voice."""
 positive_example = """
 """
 positive_reasoning = """
