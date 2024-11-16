@@ -1,0 +1,28 @@
+Laboratorio OPENAI
+Fork a repositorio https://github.com/avila196/prompt-engineering-sample
+Clonar el repositorio  [MIO] en local https://github.com/carlosjara/SP_OPENAI_Proyecto.git
+crear con anaconda el venv llamado openai
+moverse a la ruta del repositorio
+ejecutar 
+	$ python -m pip install -r requirements.txt
+crear en openai un API Key
+
+exportar en Windows [Linux] la llave
+
+setx OPENAI_API_KEY "<yourkey>" [export OPENAI_API_KEY="your-api-key"]
+
+Ubuntu 
+echo "export OPENAI_API_KEY='yourkey'" >> ~/.zshrc
+source ~/.zshrc
+usando Python 
+import os
+import openai
+ 
+openai.api_key = os.environ["OPENAI_API_KEY"]
+
+Se empiezan las pruebas y ir agregando commits a medida que se ajustan las configuraciones.
+
+surge problema con el uso de la carpeta outputs o salida a logs pyhton app.py test.txt > output.lst
+
+se corrige agregando set PYTHONIOENCODING=utf-8
+previo a la ejecucion
