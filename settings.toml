@@ -6,7 +6,17 @@ temperature = 0
 [prompts]
 instruction_prompt = """
 Classify the sentiment of each conversation in >>>>>CONTENT<<<<<
-with "🔥" for negative and "✅" for positive:
+with "🔥" for negative and "✅" for positive.
+
+Follow these steps when classifying the conversations:
+1. Does the customer use swear words or 😤?
+2. Does the customer seem aggravated or angry?
+
+If you answer "Yes" to one of the above questions,
+then classify the conversation as negative with "🔥".
+Otherwise classify the conversation as positive with "✅".
+
+Let's think step by step
 
 #### START EXAMPLES
 
